@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --navyblue: #0a1b39;
+  --blue: #2e37a4;
+  --gray200: #b6bbc4;
+}
+
+.register__container {
+  display: flex;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+label {
+  font-size: 1rem;
+}
+.register__container_side_image {
+  width: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.register__container_form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.register__container_form h1 {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+.register__container_form_content {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+
+  padding: 2rem 5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.register__container_form_content h2 {
+  color: var(--navyblue);
+  text-align: center;
+}
+.register__container_form_content p {
+  color: #6c7688;
+  text-align: center;
+  padding: 0.5rem 0 2rem 0;
+}
+.register__container_form_content p::first-letter {
+  text-transform: uppercase;
+}
+.register__container_form_content label,
+.register__container_form_content input {
+  width: 100%;
+  font-size: 1rem;
+}
+.register__container_form_content label {
+  text-transform: capitalize;
+  color: var(--navyblue);
+  font-weight: 400;
+}
+.register__container_form_content__input {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.register__container_form_content__input input {
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  width: 90%;
+  outline: none;
+  margin: 0;
+}
+::placeholder {
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #6c7688;
+}
+.register__container_form_content__checkbox {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+.register__container_form_content__checkbox input {
+  width: fit-content;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+.register__container_form_content__checkbox label {
+  color: var(--gray200);
+  text-transform: lowercase;
+}
+.register__container_form_content__checkbox label::first-letter {
+  text-transform: capitalize;
+}
+.register__container_form_content__checkbox label span {
+  color: var(--blue);
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.register__container_form_content__checkbox label span:nth-child(2) {
+  text-decoration: none;
+}
+input[type="checkbox"] {
+  accent-color: var(--blue);
+  width: 2rem;
+}
+.register__container_form_content__checkbox label {
+  margin: 0;
+}
+.register__container_form_content_button {
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  background-color: var(--blue);
+  border-radius: 0.6rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+.register__container_form_content_logginOption {
+  display: flex;
+  align-items: center;
+}
+.register__container_form_content_logginOption div {
+  border: 0.1px solid var(--gray200);
+
+  width: 70%;
+}
+.register__container_form_content_logginOption p {
+  padding: 2rem 1rem;
+
+  text-transform: uppercase;
+}
+.register__container_form_content_socialLogging {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.register__container_form_content_socialLogging div {
+  text-align: center;
+  border: 1px solid var(--gray200);
+  width: 30%;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.5rem;
+}
+.register__container_form_content_login a {
+  text-decoration: none;
+  color: var(--blue);
+  padding: 2rem 1rem 2rem 0;
+}
+footer p {
+  position: absolute;
+  bottom: 1rem;
+  left: 70%;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
