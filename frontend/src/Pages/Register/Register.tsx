@@ -1,9 +1,11 @@
 import registerImage from "../../assets/images/Illustration Section.png";
-import preclinicLogo from "../../assets/images/Icon.svg";
+
 import facebook from "../../assets/images/Vector.svg";
 import apple from "../../assets/images/path4.svg";
 import google from "../../assets/images/logo googleg 48dp.svg";
 import styles from "./Register.module.css";
+import Logo from "../../Components/Logo/Logo";
+import Button from "../../Components/Button/Button";
 const Register = () => {
   return (
     <div className={styles.register__container}>
@@ -14,10 +16,7 @@ const Register = () => {
         />
       </section>
       <section className={styles.register__container_form}>
-        <h1>
-          <img src={preclinicLogo} alt="preclinic logo" width={48} />
-          Preclinic
-        </h1>
+        <Logo />
         <form action="" className={styles.register__container_form_content}>
           <h2>Register</h2>
           <p>please enter your details to create account</p>
@@ -101,9 +100,7 @@ const Register = () => {
             </label>
           </section>
 
-          <button className={styles.register__container_form_content_button}>
-            Register
-          </button>
+          <Button role="Register" />
           <section
             className={styles.register__container_form_content_logginOption}
           >

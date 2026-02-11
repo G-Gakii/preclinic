@@ -31,11 +31,7 @@ label {
   flex-direction: column;
   justify-content: center;
 }
-.register__container_form h1 {
-  display: flex;
-  justify-content: center;
-  padding: 4rem 0;
-}
+
 .register__container_form_content {
   border: 1px solid lightgray;
   border-radius: 10px;
@@ -120,15 +116,7 @@ input[type="checkbox"] {
 .register__container_form_content__checkbox label {
   margin: 0;
 }
-.register__container_form_content_button {
-  width: 100%;
-  color: white;
-  padding: 1rem;
-  background-color: var(--blue);
-  border-radius: 0.6rem;
-  margin: 1rem 0;
-  font-size: 1rem;
-}
+
 .register__container_form_content_logginOption {
   display: flex;
   align-items: center;
