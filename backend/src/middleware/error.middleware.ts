@@ -50,7 +50,7 @@ export const errorHandler = (
 };
 
 // handles routes that don't exist.
-export const nonFoundHandler = (
+export const notFoundHandler = (
   req: Request,
   res: Response,
   next: NextFunction,

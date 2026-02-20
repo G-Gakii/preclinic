@@ -1,12 +1,11 @@
-import express from "express";
-const app = express();
-import env from "./config/env";
+import app from "./app";
 import { connectDB } from "./config/db";
+import env from "./config/env";
 
-connectDB();
-app.get("/", (req, res) => {
-  res.send("Hello typescript");
-});
-app.listen(env.Port, () => {
-  console.log(`listening at port ${env.Port}`);
-});
+const startServer = async () => {
+  await connectDB();
+  app.listen(env.Port, () => {
+    console.log(`server listening at port ${env.Port}`);
+  });
+};
+startServer();
